@@ -1,34 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import React from "react"
+import Header from "./Header"
+import Home from "./Home";
+import Services from "./Services";
+import Contact from "./Contact";
+import { BrowserRouter,Routes ,Route } from "react-router-dom";
 import './App.css'
+import { TuneSharp } from "@mui/icons-material";
+
+let background ={
+  Home : "h1.jpg",
+  Services : "h2.jpg",
+  Contact : "h3.jpg"
+}
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+  return(
+    <BrowserRouter>
+      <Routes>
+        
+          <Route    path='/' element={<Header  Images ={background} />} >
+            <Route  path='/Home'  element = {<Home Images ={background}/>} />
+            <Route  path='/Services' element = {<Services Images={background} />} />
+            <Route  path='/Contact' element = {<Contact Images={background}/>} />
+          </Route> 
+      </Routes>  
+    </BrowserRouter>
   )
 }
+
 
 export default App
