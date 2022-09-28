@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from "react"
 import Header from "./Header"
 import Home from "./Home";
@@ -7,6 +6,7 @@ import Contact from "./Contact";
 import { BrowserRouter,Routes ,Route } from "react-router-dom";
 import './App.css'
 import { TuneSharp } from "@mui/icons-material";
+
 
 let background ={
   Home : "h1.jpg",
@@ -19,7 +19,6 @@ function App() {
   return(
     <BrowserRouter>
       <Routes>
-        
           <Route    path='/' element={<Header  Images ={background} />} >
             <Route  path='/Home'  element = {<Home Images ={background}/>} />
             <Route  path='/Services' element = {<Services Images={background} />} />
@@ -27,19 +26,17 @@ function App() {
           </Route> 
       </Routes>  
     </BrowserRouter>
-=======
-import React from 'react'
-import Header from './Header'
-import "./App.css"
-
-function App() {
-  return (
-    <div>
-      <Header/>
-    </div>
->>>>>>> 0d2254a518136f398125b48f4a5122d9524cb034
   )
+
+
 }
+// function App() {
+//   return (
+//     <div>
+//       <Header/>
+//     </div>
+
+//   )
 
 
 export default App
