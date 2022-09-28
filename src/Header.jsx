@@ -1,4 +1,5 @@
 import React from 'react'
+<<<<<<< HEAD
 import { useState } from 'react'
 import {Outlet , Link} from "react-router-dom";
 
@@ -43,8 +44,29 @@ const style ={
         </div>
     </div>
     <Outlet/>
+=======
+
+function Header() {
+  return (
+    <div className='banner'>
+      <div className='addBar'>
+         <p>987654321</p>   
+      </div> <hr />
+      <div className='NavBar'>
+        <h1>Stevie Limited Solutions</h1>
+        <ul className='menu'>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Service</a></li>
+        </ul>
+      </div>  
+>>>>>>> 0d2254a518136f398125b48f4a5122d9524cb034
     </div>
   )
 }
 
+<<<<<<< HEAD
 export default Header
+=======
+export default Header
+>>>>>>> 0d2254a518136f398125b48f4a5122d9524cb034

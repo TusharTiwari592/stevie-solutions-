@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+<<<<<<< HEAD
 
 .AddBar {
   padding: 1.5rem;
@@ -67,4 +68,29 @@ body {
   text-decoration: none;
   /* color: white; */
   padding: .5rem;
+=======
+.NavBar{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.banner{
+  height: 100vh;
+  background: url(firstbanner.jpg) center /cover;
+
+}
+.addBar{
+  padding: 2rem;
+}
+.menu{
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem;
+  list-style: none;
+
+}
+.menu li a{
+  text-decoration: none;
+  padding: 0.5rem;
+>>>>>>> 0d2254a518136f398125b48f4a5122d9524cb034
 }
