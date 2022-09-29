@@ -58,3 +58,75 @@ body {
   /* color: white; */
   padding: .5rem;
 }
+#FirstDiv{
+  position: relative;
+}
+#Boxes{
+  width: 90%;
+  display: flex;
+  position:absolute;
+  bottom: -12rem;
+  left: 4rem;
+}
+.box{
+  width: 33%;
+  text-align: center;
+  padding:  1rem;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  border: 2px solid black;
+  margin: 1rem ; 
+  background: white;
+  position: relative;
+  
+}
+.box .icons {
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -23%;
+  left: 37%; background-color: black;
+}
+.box .icon{
+  font-size: 3rem;
+  color: white;
+}
+.StevieSection{
+  padding-top: 15rem;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+.StevieSection .Left{
+  width: 48%;
+  line-height: 2;
+}
+.StevieSection .Left a{
+  background-color: grey;
+  padding: .7rem 1.5rem;
+  border-radius: 2rem;
+  margin: 2rem;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+.StevieSection .Right{
+  width: 48%;
+}
+.StevieSection .Right img{
+  width: 100%;
+}
+.Offering{
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 5rem ;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
