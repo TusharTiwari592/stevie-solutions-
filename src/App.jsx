@@ -1,22 +1,25 @@
-import React, { createContext } from "react";
+import React from "react";
 import Header from "./Header";
 import Home from "./Home";
 import Services from "./Services";
-import Contact from "./Contact";
+import Contact from "./Contact"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {ContextDiv} from "./context/context"
 import "./App.css";
-import { TuneSharp } from "@mui/icons-material";
+
+
+
+
 
 let background = {
   Home: "h1.jpg",
   Services: "h2.jpg",
   Contact: "h3.jpg",
 };
-export const GlobalValues = createContext();
 
 function App() {
   return (
-    <GlobalValues.Provider value={background} >
+    <ContextDiv >
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Header Images={background} />}>
@@ -29,7 +32,8 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-    </GlobalValues.Provider>
+    </ContextDiv>
+    
   );
 }
 // function App() {

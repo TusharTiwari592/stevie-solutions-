@@ -1,11 +1,11 @@
 import React from 'react'
-import { GlobalValues } from '../App'
+import { GlobalValues } from "../context/context" 
 
 
 
 function Offering() {
    const value = React.useContext(GlobalValues)
-   console.log()
+  //  console.log()
    let style = {
         backgroundImage : `url(${value.Services})`,
         height : "500px",

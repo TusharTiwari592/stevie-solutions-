@@ -1,5 +1,5 @@
 import React from 'react'
-import { GlobalValues  } from '../App'
+import { GlobalValues  } from "../context/context"
 
 
 

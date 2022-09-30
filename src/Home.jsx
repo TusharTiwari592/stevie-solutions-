@@ -2,6 +2,7 @@ import React from "react";
 import Offering from "./subComponents/Offering";
 import StevieSection from "./subComponents/StevieSection";
 import ThreeBoxes from "./subComponents/ThreeBoxes";
+import OurServices from "./subComponents/OurServices";
 
 function Home(props) {
   const style = {
@@ -22,6 +23,7 @@ function Home(props) {
         <ThreeBoxes/>
         <StevieSection/>
         <Offering/>
+        <OurServices/>
     </div>
   );
 }

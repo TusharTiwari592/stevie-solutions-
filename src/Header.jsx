@@ -1,10 +1,15 @@
 import React from 'react'
 import { useState } from 'react'
 import {Outlet , Link} from "react-router-dom";
+import {GlobalValues} from './context/context'
+
+
 
 function Header(props) {
+  // let value = React.useContext(GlobalValues)
+  // console.log(value)
 
-  let [img ,setImg]= useState("Home")
+  // let [img ,setImg]= useState("Home")
 
 // console.log(img)
 
@@ -19,6 +24,12 @@ const style ={
     zIndex:"999",
 
 }
+
+let background = {
+  Home: "h1.jpg",
+  Services: "h2.jpg",
+  Contact: "h3.jpg",
+};
 // console.log(img)
 
     function Click(e){
@@ -26,7 +37,6 @@ const style ={
         setImg(e.target.innerText)
 
     }
-
 
 
   return (
