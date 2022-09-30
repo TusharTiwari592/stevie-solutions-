@@ -17,20 +17,9 @@ function Counter() {
   return (
     <div className='counter'>
         <Allcounters limit = {4} content = 'Years of Experience' />
-        
-        {/* <div className="count">
-            <h1>250 +</h1>
-            <p></p>
-        </div>
-        <div className="count">
-            <h1>45 +</h1>
-            <p>Running Projects</p>
-        </div>
-        <div className="count">
-            <h1>25 +</h1>
-            <p>Professional Team</p>
-        </div> */}
-        
+        <Allcounters limit = {250} content = 'Handled Projects' />
+        <Allcounters limit = {45} content = 'Running Projects' />
+        <Allcounters limit = {25} content = 'Professional Team' />
     </div>
   )
 }
