@@ -3,6 +3,7 @@ import Offering from "./subComponents/Offering";
 import StevieSection from "./subComponents/StevieSection";
 import ThreeBoxes from "./subComponents/ThreeBoxes";
 import OurServices from "./subComponents/OurServices";
+import Counter from "./subComponents/Counter";
 
 function Home(props) {
   const style = {
@@ -24,6 +25,7 @@ function Home(props) {
         <StevieSection/>
         <Offering/>
         <OurServices/>
+        <Counter/>
     </div>
   );
 }
